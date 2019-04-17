@@ -42,8 +42,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Microsoft.Extensions.DependencyInjection.9.0.2\lib\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Microsoft.Extensions.DependencyInjection.Abstractions.9.0.2\lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.2\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Abstractions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Abstractions.1.7.1\lib\Sitecore.XA.Foundation.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Editing, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Editing.1.7.1\lib\Sitecore.XA.Foundation.Editing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.SitecoreExtensions.1.7.1\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -55,6 +75,7 @@
   <ItemGroup>
     <Compile Include="Shell\Framework\Pipelines\DeleteItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XA\Foundation\LocalDatasources\Processors\DeleteItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\Sitecore.Support.325507.config" />
