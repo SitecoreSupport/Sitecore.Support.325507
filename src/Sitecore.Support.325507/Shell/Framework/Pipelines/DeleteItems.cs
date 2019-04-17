@@ -33,7 +33,7 @@ namespace Sitecore.Support.Shell.Framework.Pipelines
 
             if (Context.Item == null || item.ID != Context.Item.ID)
             {
-              Context.ClientPage.ClientResponse.Eval(string.Format("this.Content.loadSearchedItem('{0}')", item.ID));
+              Context.ClientPage.ClientResponse.Eval("if(this.Content && this.Content.loadSearchedItem){this.Content.loadSearchedItem('" + item.ID + "')}");
             }
           }
 
